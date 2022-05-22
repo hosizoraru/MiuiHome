@@ -13,8 +13,8 @@ android {
         applicationId = "com.yuk.miuihome"
         minSdk = 29
         targetSdk = 32
-        versionCode = 4400
-        versionName = "4.4"
+        versionCode = 4310
+        versionName = "4.31"
     }
     val properties = Properties()
     runCatching {
