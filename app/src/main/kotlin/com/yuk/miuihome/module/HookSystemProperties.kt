@@ -9,6 +9,7 @@ class HookSystemProperties {
         "android.os.SystemProperties".hookBeforeMethod("getBoolean", String::class.java, Boolean::class.java
         ) {
             if (it.args[0] == "ro.miui.backdrop_sampling_enabled") it.result = true
+            if (it.args[0] == "persist.vendor.battery.health") it.result = true
         }
         if (OwnSP.ownSP.getBoolean("lowEndAnim", false))
             "android.os.SystemProperties".hookBeforeMethod("getBoolean", String::class.java, Boolean::class.java
