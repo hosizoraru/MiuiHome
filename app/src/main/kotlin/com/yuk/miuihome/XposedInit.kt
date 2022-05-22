@@ -55,6 +55,7 @@ class XposedInit : IXposedHookLoadPackage, IXposedHookZygoteInit {
                     checkAndroidVersion()
                 }
                 if (BuildConfig.DEBUG) XposedBridge.log("MiuiHome: [com.miui.home] hook success")
+                if (BuildConfig.DEBUG) XposedBridge.log("MiuiHome: [com.miui.securitycenter] hook success")
             }
             else -> return
         }
