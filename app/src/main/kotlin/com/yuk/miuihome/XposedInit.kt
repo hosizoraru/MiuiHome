@@ -179,12 +179,3 @@ class XposedInit : IXposedHookLoadPackage, IXposedHookZygoteInit {
         }
     }
 }
-
-class XposedInit : EasyXposedInit() {
-
-    override val registeredApp: List<AppRegister> = listOf(
-        MiuiHome, // 桌面
-        SecurityCenter, // 手机管家
-    )
-
-}
