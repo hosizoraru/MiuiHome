@@ -13,8 +13,8 @@ android {
         applicationId = "com.yuk.miuihome"
         minSdk = 29
         targetSdk = 32
-        versionCode = 4300
-        versionName = "4.3"
+        versionCode = 4400
+        versionName = "4.4"
     }
     val properties = Properties()
     runCatching {
@@ -82,7 +82,7 @@ dependencies {
     //xposed api
     compileOnly("de.robv.android.xposed:api:82")
     //EzXHelper
-    implementation("com.github.kyuubiran:EzXHelper:0.9.2")
+    implementation("com.github.kyuubiran:EzXHelper:0.8.8")
     //recyclerview
     implementation("androidx.recyclerview:recyclerview:1.3.0-alpha02")
 }
